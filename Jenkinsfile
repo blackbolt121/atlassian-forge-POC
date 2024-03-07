@@ -5,7 +5,7 @@ pipeline {
         stage('Clonar Repositorio') {
             steps {
                 // Clonar el repositorio de GitHub
-                git 'https://github.com/blackbolt121/atlassian-forge-jenkins-POC.git'
+                git branch: 'main', url: 'https://github.com/blackbolt121/atlassian-forge-jenkins-POC.git'
             }
         }
         /*
