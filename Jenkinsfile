@@ -18,7 +18,8 @@ pipeline {
         stage('Compile and Deploy') {
             steps {
                 sh 'cd static/hello-world && npm install && npm run build'
-                sh 'cd ../.. && forge deploy'
+                sh 'echo $(pwd)'
+                sh 'cd ../.. && forge deploy --non-interactive'
             }
         }
     }
