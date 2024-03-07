@@ -16,6 +16,5 @@ RUN apt-get update && \
 USER jenkins
 
 ENV FORGE_EMAIL rego199903@gmail.com
-ENV FORGE_API_TOKEN 
-RUN forge settings set usage-analytics true
+ENV FORGE_API_TOKEN
 

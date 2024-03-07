@@ -19,7 +19,7 @@ pipeline {
             steps {
                 sh 'cd static/hello-world && npm install && npm run build'
                 sh 'echo $(pwd)'
-                sh 'cd ../.. && forge deploy --non-interactive'
+                sh 'cd ../.. && forge settings set usage-analytics true && forge deploy --non-interactive'
             }
         }
     }
