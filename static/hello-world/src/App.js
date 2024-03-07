@@ -11,7 +11,7 @@ function App() {
     return (
         <div>
             {data ? data : 'Loading...'}
-            <div>Testing github webhooks 1</div>
+            <div>Testing github webhooks 2</div>
         </div>
         
     );
